@@ -33,7 +33,10 @@
         "laravel": {
             "providers": [
                 "SamWrigley\\Hobnob\\HobnobServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "Handle": "SamWrigley\\Hobnob\\Facades\\SocialNetworkFacade"
+            }
         }
     }
 }
