@@ -55,4 +55,29 @@ class SocialNetwork
     {
         return (new static)->getNetworks();
     }
+
+    /**
+     * Get handles of given social networks.
+     *
+     * @param  array|string|string[]  $networkNames
+     * @return null|string|string[]
+     */
+    public static function handles($networkNames = [])
+    {
+        $handles = (new static)
+            ->getNetworks(
+                is_array($networkNames) ? $networkNames : func_get_args()
+            )
+            ->pluck('handle');
+
+        if (!$handles->count()) {
+            return null;
+        }
+
+        if ($handles->count() === 1) {
+            return $handles->first();
+        }
+
+        return $handles->toArray();
+    }
 }
