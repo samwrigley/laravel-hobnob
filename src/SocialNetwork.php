@@ -70,8 +70,8 @@ class SocialNetwork
             )
             ->pluck('handle');
 
-        if (!$handles->count()) {
-            return null;
+        if (! $handles->count()) {
+            return;
         }
 
         if ($handles->count() === 1) {
