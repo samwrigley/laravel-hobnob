@@ -80,7 +80,7 @@ class HobnobServiceProvider extends ServiceProvider
      */
     private function bootCollectionMacros()
     {
-        /**
+        /*
          * Reject key/value pairs in an associative
          * array where the value is `empty`.
          */
@@ -94,7 +94,7 @@ class HobnobServiceProvider extends ServiceProvider
             });
         });
 
-        /**
+        /*
          * Filter associative arrays to only those that
          * contain all then given keys.
          */
@@ -104,11 +104,11 @@ class HobnobServiceProvider extends ServiceProvider
             });
         });
 
-        /**
+        /*
          * Filter associative arrays by given keys.
          */
         Collection::macro('filterByKeys', function (array $items) {
-            return $this->when(!empty($items), function ($query) use ($items) {
+            return $this->when(! empty($items), function ($query) use ($items) {
                 return $query->filter(function ($value, $key) use ($items) {
                     return in_array($key, $items);
                 });
@@ -143,7 +143,7 @@ class HobnobServiceProvider extends ServiceProvider
      */
     private function registerBladeDirectives()
     {
-        /**
+        /*
          * Render sharing links.
          *
          * @example @sharingLinks
@@ -154,7 +154,7 @@ class HobnobServiceProvider extends ServiceProvider
             return "<?php echo app('SamWrigley\Hobnob\LinkGenerator')->sharingLinks($networks); ?>";
         });
 
-        /**
+        /*
          * Render social links.
          *
          * @example @socialLinks
