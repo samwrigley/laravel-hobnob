@@ -35,7 +35,7 @@
                 "SamWrigley\\Hobnob\\HobnobServiceProvider"
             ],
             "aliases": {
-                "Handle": "SamWrigley\\Hobnob\\Facades\\SocialNetworkFacade"
+                "SocialNetwork": "SamWrigley\\Hobnob\\Facades\\SocialNetworkFacade"
             }
         }
     }
