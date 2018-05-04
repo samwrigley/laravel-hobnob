@@ -61,7 +61,8 @@ class LinkGenerator
     {
         return $networks
             ->map(function ($network) {
-                $profileUrl = $network['url'] . $network['handle'];
+                $profileUrl = $network['url'].$network['handle'];
+
                 return array_add($network, 'profileUrl', $profileUrl);
             })
             ->toArray();
@@ -77,7 +78,8 @@ class LinkGenerator
     {
         return $networks
             ->map(function ($network) {
-                $shareUrl = $network['baseShareUrl'] . url()->current();
+                $shareUrl = $network['baseShareUrl'].url()->current();
+
                 return array_add($network, 'shareUrl', $shareUrl);
             })
             ->toArray();
