@@ -1,6 +1,6 @@
 {
     "name": "samwrigley/laravel-hobnob",
-    "description": "A package for easily creating social links in Laravel applications.",
+    "description": "A package for easily creating social and sharing links in Laravel applications.",
     "homepage": "https://github.com/samwrigley/laravel-hobnob",
     "authors": [
         {
