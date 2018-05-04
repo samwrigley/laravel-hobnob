@@ -228,7 +228,7 @@ SocialNetwork::get('twitter');
 SocialNetwork::get(['twitter', 'facebook']);
 ```
 
-The `get()` method (when passed an array) and the `all()` method will return an `Illuminate\Support\Collection` object, You can call `toArray()` to convert the object into an array. For example:
+The `get()` method (when passed an array) and the `all()` method will return an `Illuminate\Support\Collection` object, you can therefore call `toArray()` to convert the object to an array. For example:
 
 ``` php
 SocialNetwork::all()->toArray();
