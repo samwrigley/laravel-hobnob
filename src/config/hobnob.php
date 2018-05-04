@@ -6,9 +6,6 @@ return [
     |--------------------------------------------------------------------------
     | Social Networks
     |--------------------------------------------------------------------------
-    |
-    | Please Note: Each `baseShareUrl` needs the current URL appended to it.
-    |
     */
 
     'networks' => [
