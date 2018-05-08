@@ -26,7 +26,7 @@ return [
             'handle' => env('SOCIAL_INSTAGRAM'),
             'url' => 'https://instagram.com/',
         ],
-        'linkedIn' => [
+        'linkedin' => [
             'name' => 'LinkedIn',
             'handle' => env('SOCIAL_LINKEDIN'),
             'url' => 'https://linkedin.com/',
@@ -44,7 +44,7 @@ return [
             'url' => 'https://plus.google.com/',
             'baseShareUrl' => 'https://plus.google.com/share?url=',
         ],
-        'gitHub' => [
+        'github' => [
             'name' => 'GitHub',
             'handle' => env('SOCIAL_GITHUB'),
             'url' => 'https://github.com/',
