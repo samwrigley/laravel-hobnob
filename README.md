@@ -98,24 +98,24 @@ return [
             'name' => 'Facebook',
             'handle' => env('SOCIAL_FACEBOOK'),
             'url' => 'https://facebook.com/',
-            'baseShareUrl' => "https://www.facebook.com/sharer/sharer.php?u=",
+            'baseShareUrl' => 'https://www.facebook.com/sharer/sharer.php?u=',
         ],
         'twitter' => [
             'name' => 'Twitter',
             'handle' => env('SOCIAL_TWITTER'),
             'url' => 'https://twitter.com/',
-            'baseShareUrl' => "https://twitter.com/share?url=",
+            'baseShareUrl' => 'https://twitter.com/share?url=',
         ],
         'instagram' => [
             'name' => 'Instagram',
             'handle' => env('SOCIAL_INSTAGRAM'),
             'url' => 'https://instagram.com/',
         ],
-        'linkedIn' => [
+        'linkedin' => [
             'name' => 'LinkedIn',
             'handle' => env('SOCIAL_LINKEDIN'),
             'url' => 'https://linkedin.com/',
-            'baseShareUrl' => 'https://www.linkedin.com/shareArticle?mini=true&url=',
+            'baseShareUrl' => 'https://www.linkedin.com/shareArticle?url=',
         ],
         'pinterest' => [
             'name' => 'Pinterest',
@@ -129,7 +129,7 @@ return [
             'url' => 'https://plus.google.com/',
             'baseShareUrl' => 'https://plus.google.com/share?url=',
         ],
-        'gitHub' => [
+        'github' => [
             'name' => 'GitHub',
             'handle' => env('SOCIAL_GITHUB'),
             'url' => 'https://github.com/',

@@ -6,6 +6,14 @@ return [
     |--------------------------------------------------------------------------
     | Social Networks
     |--------------------------------------------------------------------------
+    |
+    | Feel free to add additional social networks as needed. You can also add
+    | additional key/value pairs to each social network.
+    |
+    | Note that the published configuration file is merged with the package's
+    | default configuration file, meaning you only need to define the
+    | key/value pairs that you want to add or override.
+    |
     */
 
     'networks' => [
@@ -26,11 +34,11 @@ return [
             'handle' => env('SOCIAL_INSTAGRAM'),
             'url' => 'https://instagram.com/',
         ],
-        'linkedIn' => [
+        'linkedin' => [
             'name' => 'LinkedIn',
             'handle' => env('SOCIAL_LINKEDIN'),
             'url' => 'https://linkedin.com/',
-            'baseShareUrl' => 'https://www.linkedin.com/shareArticle?mini=true&url=',
+            'baseShareUrl' => 'https://www.linkedin.com/shareArticle?url=',
         ],
         'pinterest' => [
             'name' => 'Pinterest',
@@ -44,7 +52,7 @@ return [
             'url' => 'https://plus.google.com/',
             'baseShareUrl' => 'https://plus.google.com/share?url=',
         ],
-        'gitHub' => [
+        'github' => [
             'name' => 'GitHub',
             'handle' => env('SOCIAL_GITHUB'),
             'url' => 'https://github.com/',
