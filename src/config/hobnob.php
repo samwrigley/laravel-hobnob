@@ -6,6 +6,14 @@ return [
     |--------------------------------------------------------------------------
     | Social Networks
     |--------------------------------------------------------------------------
+    |
+    | Feel free to add additional social networks as needed. You can also add
+    | additional key/value pairs to each social network.
+    |
+    | Note that the published configuration file is merged with the package's
+    | default configuration file, meaning you only need to define the
+    | key/value pairs that you want to add or override.
+    |
     */
 
     'networks' => [
