@@ -98,13 +98,13 @@ return [
             'name' => 'Facebook',
             'handle' => env('SOCIAL_FACEBOOK'),
             'url' => 'https://facebook.com/',
-            'baseShareUrl' => "https://www.facebook.com/sharer/sharer.php?u=",
+            'baseShareUrl' => 'https://www.facebook.com/sharer/sharer.php?u=',
         ],
         'twitter' => [
             'name' => 'Twitter',
             'handle' => env('SOCIAL_TWITTER'),
             'url' => 'https://twitter.com/',
-            'baseShareUrl' => "https://twitter.com/share?url=",
+            'baseShareUrl' => 'https://twitter.com/share?url=',
         ],
         'instagram' => [
             'name' => 'Instagram',
