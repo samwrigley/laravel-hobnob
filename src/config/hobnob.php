@@ -30,7 +30,7 @@ return [
             'name' => 'LinkedIn',
             'handle' => env('SOCIAL_LINKEDIN'),
             'url' => 'https://linkedin.com/',
-            'baseShareUrl' => 'https://www.linkedin.com/shareArticle?mini=true&url=',
+            'baseShareUrl' => 'https://www.linkedin.com/shareArticle?url=',
         ],
         'pinterest' => [
             'name' => 'Pinterest',
