@@ -42,7 +42,7 @@ class HobnobServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/config/hobnob.php' => config_path('hobnob.php'),
-        ]);
+        ], 'hobnob-config');
     }
 
     /**
@@ -56,7 +56,7 @@ class HobnobServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/views' => resource_path('views/vendor/hobnob'),
-        ]);
+        ], 'hobnob-views');
     }
 
     /**
@@ -70,7 +70,7 @@ class HobnobServiceProvider extends ServiceProvider
 
         $this->publishes([
             __DIR__.'/resources/lang' => resource_path('lang/vendor/hobnob'),
-        ]);
+        ], 'hobnob-translations');
     }
 
     /**
