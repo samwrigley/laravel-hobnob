@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v0.1.3] - 2018-09-05
+
+### Added
+
+- Added the `SocialNetwork` facade binding to the service container.
+
 ## [v0.1.2] - 2018-09-05
 
 ### Changed
