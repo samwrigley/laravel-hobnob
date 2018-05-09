@@ -124,6 +124,8 @@ class HobnobServiceProvider extends ServiceProvider
     private function registerBindings()
     {
         $this->app->singleton(SocialNetwork::class);
+
+        $this->app->bind('social-network', SocialNetwork::class);
     }
 
     /**
