@@ -75,7 +75,7 @@ SOCIAL_GITHUB=
 Optionally, to publish the package's configuration file, run the following artisan command:
 
 ``` bash
-php artisan vendor:publish --provider="SamWrigley\Hobnob\HobnobServiceProvider"
+php artisan vendor:publish --tag=hobnob-config
 ```
 
 Only publish the configuration file if you need to add additional social networks, or key/value pairs to the social networks. Once published, any updates to the package's configuration file will need to be manually brought across.
@@ -158,7 +158,7 @@ No one likes having to use someone else's markup, so in order to override the de
 To do so, run the following artisan command and choose which files you'd like to publish:
 
 ``` bash
-php artisan vendor:publish
+php artisan vendor:publish --tag=hobnob-views
 ```
 
 Inside the `resources/views/vendor/hobnob` directory you'll now find the `social-links.blade.php` and `sharing-links.blade.php` Blade partials. You are free to change these files however you wish to create your own custom social and sharing links.
@@ -193,7 +193,7 @@ Any additional key/value pairs added to the social networks with the package's c
 To publish the package's translation file, run the following artisan command and choose the file you'd like to publish:
 
 ``` bash
-php artisan vendor:publish
+php artisan vendor:publish --tag=hobnob-translations
 ```
 
 You can find the published translation file in the `resources/lang/vendor` directory.
