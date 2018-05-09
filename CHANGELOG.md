@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [v0.1.2] - 2018-09-05
+
+### Changed
+
+- Corrected path to publishable views in package's service provider.
+
 ## [v0.1.1] - 2018-09-05
 
 ### Added
