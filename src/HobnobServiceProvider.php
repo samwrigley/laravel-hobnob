@@ -55,7 +55,7 @@ class HobnobServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/resources/views', 'hobnob');
 
         $this->publishes([
-            __DIR__.'/views' => resource_path('views/vendor/hobnob'),
+            __DIR__.'/resources/views' => resource_path('views/vendor/hobnob'),
         ], 'hobnob-views');
     }
 
